@@ -21,7 +21,4 @@ async def websocket_endpoint(websocket: WebSocket):
     finally: 
         clients.remove(websocket)
 
-@app.get("/")
-async def get():
-    return FileResponse("public/index.html")
         
